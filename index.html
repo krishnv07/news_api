@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>News Website</title>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="bg-dark text-white d-flex justify-content-between align-items-center py-3 px-4">
+    <div class="d-flex align-items-center">
+      <h1 class="title">welcome to news world</h1>
+    </div>
+    <nav class="categories">
+      <a href="#general" onclick={userInput} value="general" class="btn btn-outline-light mx-1 category-btn"
+        data-category="general" id="general">General</a>
+
+      <a href="#health" onclick={userInput} value="health" class="btn btn-outline-light mx-1 category-btn"
+        data-category="health" id="health">Health</a>
+
+
+      <a href="#business" onclick={userInput} value="business" class="btn btn-outline-light mx-1 category-btn"
+        data-category="business" id="business">Business</a>
+
+      <a href="#technology" onclick={userInput} value="technology" class="btn btn-outline-light mx-1 category-btn"
+        data-category="technology" id="technology">Technology</a>
+
+      <a href="#sports" onclick={userInput} value="sports" class="btn btn-outline-light mx-1 category-btn"
+        data-category="sports" id="sports">Sports</a>
+
+      <a href="#entertainment" onclick={userInput} value="entertainment" class="btn btn-outline-light mx-1 category-btn"
+        data-category="entertainment" id="entertainment">Entertainment</a>
+
+
+      <a href="#science" onclick={userInput} value="science" class="btn btn-outline-light mx-1 category-btn"
+        data-category="science" id="science">Science</a>
+
+
+
+
+    </nav>
+
+
+
+    <div class="search-container">
+      <input type="text" id="searchInput" class="form-control d-inline-block w-50" placeholder="Search for news...">
+      <button id="search" class="btn btn-primary ms-2">Search</button>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <h1>today's news (<span id="resultCount"></span>)Results</h1>
+    <div class="row content"></div>
+  </div>
+
+  </div>
+
+
+  <div class="pagination text-center my-4">
+    <button id="prev" class="btn btn-dark mx-2">&lt; Previous</button>
+    <button id="next" class="btn btn-dark mx-2">Next &gt;</button>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

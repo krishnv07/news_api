@@ -1,0 +1,177 @@
+/* General Styling */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: lightcyan;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+h1 {
+  margin-right: 30px;
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#search {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#search:hover {
+  background-color: #0056b3;
+}
+
+/* Category Buttons */
+.categories {
+  display: flex;
+}
+
+.category-btn {
+  background-color: transparent;
+  color: black(212, 232, 241);
+  padding: 10px 15px;
+  margin-right: 5px;
+  border: none; /* Remove border */
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.category-btn:hover {
+  background-color: #555;
+  text-decoration: none;
+}
+
+
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #555;
+}
+
+.title{
+  margin: auto;
+  font-size: large;
+}
+
+.container {
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  content-visibility:auto ;
+  justify-content: space-between;
+}
+
+.card {
+  margin-bottom: 30px; 
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-top: 5px;  
+  cursor: pointer;
+  width: 80px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.btn-info{
+  background-color: #007bff;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-top: 100%;  
+  cursor: pointer;
+  width: 50px;  
+  text-decoration: none;
+
+
+}
+
+.btn-info:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+
+}
+
